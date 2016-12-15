@@ -25,7 +25,7 @@ void hapticPeekVibe(){
         NSMutableDictionary* VibrationDictionary = [NSMutableDictionary dictionary];
         NSMutableArray* VibrationArray = [NSMutableArray array ];
         [VibrationArray addObject:[NSNumber numberWithBool:YES]];
-        [VibrationArray addObject:[NSNumber numberWithInt:30]]; //vibrate for 50ms
+        [VibrationArray addObject:[NSNumber numberWithInt:10]]; //vibrate for 50ms *EDIT vibration should be a lot shorter
         [VibrationDictionary setObject:VibrationArray forKey:@"VibePattern"];
         [VibrationDictionary setObject:[NSNumber numberWithInt:1] forKey:@"Intensity"];
         AudioServicesPlaySystemSoundWithVibration(4095,nil,VibrationDictionary);
@@ -35,7 +35,7 @@ void hapticPopVibe(){
         NSMutableDictionary* VibrationDictionary = [NSMutableDictionary dictionary];
         NSMutableArray* VibrationArray = [NSMutableArray array ];
         [VibrationArray addObject:[NSNumber numberWithBool:YES]];
-        [VibrationArray addObject:[NSNumber numberWithInt:30]]; //vibrate for 50ms
+        [VibrationArray addObject:[NSNumber numberWithInt:10]]; //vibrate for 50ms *EDIT the vibration should be a lot shorter.
         [VibrationDictionary setObject:VibrationArray forKey:@"VibePattern"];
         [VibrationDictionary setObject:[NSNumber numberWithInt:2] forKey:@"Intensity"];
         AudioServicesPlaySystemSoundWithVibration(4095,nil,VibrationDictionary);
